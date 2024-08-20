@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovqat Buyurtma Sayti</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Ovqat Buyurtma Sayti</h1>
+    </header>
+    
+    <section id="menu">
+        <h2>Ovqatlar Menyusi</h2>
+        <div class="food-item">
+            <h3>Palov</h3>
+            <p>10,000 so'm</p>
+            <button onclick="addToCart('Palov', 10000)">Buyurtma qilish</button>
+        </div>
+        <div class="food-item">
+            <h3>Sho'rva</h3>
+            <p>8,000 so'm</p>
+            <button onclick="addToCart('Sho\'rva', 8000)">Buyurtma qilish</button>
+        </div>
+        <div class="food-item">
+            <h3>Manti</h3>
+            <p>12,000 so'm</p>
+            <button onclick="addToCart('Manti', 12000)">Buyurtma qilish</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Savat</h2>
+        <ul id="cart-items"></ul>
+        <p>Umumiy narx: <span id="total-price">0</span> so'm</p>
+        <button onclick="checkout()">Buyurtmani yakunlash</button>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
